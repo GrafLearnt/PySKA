@@ -115,15 +115,6 @@ class LightStickCommand(sublime_plugin.TextCommand):
     def url(self):
         return "http://127.0.0.1:9200/_search"
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.view.window().run_command("show_panel", {"panel": "output.elastic"})
-        self.window = self.view.window()
-        self.window.destroy_output_panel("elastic")
-        self.output_panel = self.window.create_output_panel("elastic")
-        self.output_panel.set_name("Elastic Output Panel")
-        self.output_panel.set_syntax_file("Packages/ShellScript/Shell-Unix-Generic.sublime-syntax")
-
     def get_result(self) -> str:
         # Parse YAML into a Python dictionary
         yaml_data = self.view.substr(sublime.Region(0, self.view.size()))
