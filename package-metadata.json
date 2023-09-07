@@ -1,0 +1,1 @@
+{"platforms": ["*"], "sublime_text": "*", "url": "https://github.com/graflearnt", "version": "0.1.0", "description": "Pytest Sublime Kostiantyn's Add-on", "dependencies": ["requests", "pyyaml"]}

@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "pyska"
+version = "0.1.0"
+description = "Pytest Sublime Kostiantyn's Add-on"
+authors = ["Kostiantyn Shmyhelskyi <graflearnt@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "*"
+pyyaml = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+ruff = "^0.0.287"
+isort = "^5.12.0"
+mypy = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/foo.py  # exclude a file named foo.py in the root of the project (in addition to the defaults)
+'''
+
+[tool.pyright]
+pythonVersion = '3.8'
+venvPath = ''
+venv = ''
+
+
+[tool.ruff]
+line-length = 100
