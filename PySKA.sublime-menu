@@ -6,16 +6,16 @@
                 "caption": "PySKA",
                 "children": [
                     {
-                        "caption": "PySKA: Pytest Sublime Kostiantyn's Add-on: run pytest",
+                        "caption": "PySKA: Pytest Sublime Kostiantyn's Add-on: run pytest 🖥️",
                         "command": "pyska"
                     },
                     {
-                        "caption": "PySKA: Show PySKA",
+                        "caption": "PySKA: Show PySKA 🍌",
                         "command": "show_pyska"
                     },
                     {
-                        "caption": "PySKA: LightStick",
-                        "command": "light_stick"
+                        "caption": "PySKA: LipStick 💄",
+                        "command": "lip_stick"
                     }
                 ]
             }

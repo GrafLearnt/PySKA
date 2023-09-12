@@ -110,7 +110,7 @@ class ShowPyskaCommand(sublime_plugin.TextCommand):
         self.view.window().run_command("show_panel", {"panel": "output.my_output_panel"})
 
 
-class LightStickCommand(sublime_plugin.TextCommand):
+class LipStickCommand(sublime_plugin.TextCommand):
     @property
     def url(self):
         return "http://127.0.0.1:9200/_search"

@@ -1,0 +1,14 @@
+[
+    {
+        "caption": "PySKA: Pytest Sublime Kostiantyn's Add-on: run pytest 🖥️",
+        "command": "pyska"
+    },
+    {
+        "caption": "PySKA: Show PySKA  🍌",
+        "command": "show_pyska"
+    },
+    {
+        "caption": "PySKA: LipStick 💄",
+        "command": "lip_stick"
+    }
+]
