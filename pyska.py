@@ -63,11 +63,9 @@ class PyskaCommand(sublime_plugin.TextCommand):
                 test_name = ""
 
             commands = (
-                ["cd %s" % folder]
-                + self.pre
+                self.pre
                 + ["poetry run pytest%s %s%s" % (self.args, filename, test_name)]
             )
-            self.print("NEW one\n")
             for command in commands:
                 self.print("%s\n" % command)
             self.composite_command = " && ".join(commands)
